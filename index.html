@@ -1,1 +1,42 @@
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemilihan Ketua OSIS SMKN 1 Ampelgading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pemilihan Ketua OSIS<br>SMKN 1 Ampelgading</h1>
+        <p>Pilih salah satu kandidat di bawah ini sebagai Ketua OSIS periode 2025!</p>
+        <div class="candidates">
+            <div class="candidate">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Calon 1">
+                <h2>Rizki Fadillah</h2>
+                <p>Visi: Menjadikan OSIS lebih aktif, inovatif, dan berprestasi.</p>
+                <button onclick="vote('Rizki Fadillah')">Pilih</button>
+            </div>
+            <div class="candidate">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Calon 2">
+                <h2>Ayu Lestari</h2>
+                <p>Visi: Membangun OSIS sebagai wadah aspirasi seluruh siswa.</p>
+                <button onclick="vote('Ayu Lestari')">Pilih</button>
+            </div>
+            <div class="candidate">
+                <img src="https://randomuser.me/api/portraits/men/53.jpg" alt="Calon 3">
+                <h2>Dwi Prasetyo</h2>
+                <p>Visi: Mengembangkan kegiatan ekstrakurikuler dan meningkatkan solidaritas siswa.</p>
+                <button onclick="vote('Dwi Prasetyo')">Pilih</button>
+            </div>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script>
+        function vote(name) {
+            document.getElementById('result').textContent = 
+              `Terima kasih! Anda telah memilih: ${name}`;
+        }
+    </script>
+</body>
+</html>
